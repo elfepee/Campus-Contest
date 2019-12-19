@@ -1,0 +1,117 @@
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+/* Site visité */
+
+a, a:visited {
+	text-decoration: none;
+	color: #000;
+	transition: all 0.4s ease;
+}
+
+/* Rectangle principal */
+
+.principal{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  margin: 20px 20px 0px 20px;
+  padding: 20px;
+}
+
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Placement logo */
+
+header a img {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+/* Contact/Mention légal */
+
+footer ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* © 2019-2020 - BEURTHE Alex */
+
+footer p{
+  padding-top: 18px;
+  position: absolute;
+  display:  inline-block;
+  right: 40px;
+}
+
+/* Placement Contact/Mention légal */
+
+footer li {
+  padding-top: 5px;
+  margin-left: -10px;
+}
+
+/* Titre "BEURTHE Alex" */
+
+h1{
+  position: absolute;
+  top: 40px;
+  right: 505px;
+  font-size: 50px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 120px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0px 0px 20px #17CBCB;
+  text-decoration: underline #17CBCB ;
+  color: #2D3436;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Titre "developpeur" */
+
+h2 {
+  position: absolute;
+  right: 600px;
+  top: 100px;
+  font-size: 45px;
+  line-height: 57px;
+  text-align: center;
+  color: #17CBCB;
+}
+
+/* Logo github */
+
+header ul li a#github, a:hover {
+  list-style-type: none;
+	position: absolute;
+	top: 70px;
+  right: 100px;
+}
+
+/* Logo LikeIn */
+
+header ul li a#in {
+  list-style-type: none;
+	position: absolute;
+	top: 70px;
+	right: 175px;
+}
+
+/* Couleur au survole des réseaux */
+
+ul li a:hover {
+  color: #0077B4;
+}
+
+/* Portfolio */
+
+header ul li a#pf {
+  text-decoration: none;
+}
