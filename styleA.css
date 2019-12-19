@@ -1,3 +1,7 @@
+*{
+  margin:0;
+  padding:0;
+}
 body {
   font-family: 'Dosis', sans-serif;
 }
@@ -8,6 +12,20 @@ a, a:visited {
 	text-decoration: none;
 	color: #000;
 	transition: all 0.4s ease;
+}
+
+.niv_1 {
+  display: flex;
+}
+
+.titre {
+  box-shadow: 0px 0px 20px #17CBCB;
+  margin-top: 35px;
+  margin-left: 415px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 125px;
+  margin-bottom: 40px;
 }
 
 /* Couleur au passage de la souris */
@@ -32,8 +50,8 @@ header {
 /* Placement logo */
 
 header a img {
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 /* Contact/Mention légal */
@@ -46,7 +64,7 @@ footer ul {
 /* © 2019-2020 - BEURTHE Alex */
 
 footer p{
-  padding-top: 18px;
+  padding: 50px;
   position: absolute;
   display:  inline-block;
   right: 40px;
@@ -55,69 +73,138 @@ footer p{
 /* Placement Contact/Mention légal */
 
 footer li {
-  padding-top: 5px;
-  margin-left: -10px;
+  padding-top: 25px;
+  margin-left: 30px;
 }
 
 /* Titre "BEURTHE Alex" */
 
 h1{
-  position: absolute;
-  top: 40px;
-  right: 480px;
+  margin: 0px;
   font-size: 50px;
   line-height: 80px;
   text-align: center;
-  vertical-align: top;
-  margin-bottom: 120px;
-  margin-left: 50px;
-  margin-right: 50px;
-  box-shadow: 0px 0px 20px #17CBCB;
-  text-decoration: underline #17CBCB ;
   color: #2D3436;
-  padding-bottom: 50px;
-  padding-right: 15px;
-  padding-left: 15px;
+  height: 65px;
+  position: relative;
+}
+
+h1:after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  background-color: #17CBCB;
+  width: 140px;
+  height: 2px;
+
 }
 
 /* Titre "developpeur" */
 
 h2 {
-  position: absolute;
-  right: 575px;
-  top: 100px;
+  margin: 0px;
   font-size: 45px;
   line-height: 57px;
   text-align: center;
   color: #17CBCB;
 }
 
-/* Logo github */
+/* Logo */
 
-header ul li a#github, a:hover {
+.réseaux {
   list-style-type: none;
-	position: absolute;
-	top: 70px;
-  right: 100px;
+  display: flex;
+  margin-left: 20%;
+  margin-top: 4.5%;
 }
 
-/* Logo LikeIn */
-
-header ul li a#in {
-  list-style-type: none;
-	position: absolute;
-	top: 70px;
-	right: 175px;
+.réseaux li {
+  padding: 20px;
 }
 
 /* Couleur au survole des réseaux */
 
-ul li a:hover {
+.réseaux li a:hover {
   color: #0077B4;
 }
 
-/* Portfolio */
+/* Navbar */
+
+.navbar{
+  display: flex;
+  position: sticky;
+  top: -2px;
+  background-color: #ffffff; 
+}
+
+.navbar li{
+  margin-left: 0px;
+  margin-right: 0px;
+  list-style-type: none;
+  font-size: 25px;
+  color: #2D3436;
+  border-width:2px 1px 2px 1px;
+  border-style:solid;
+  border-color: #95a5a6;
+  padding: 0px 138.5px 0px 138.6px;
+}
+
+.navbar li:hover{
+  color: #17CBCB;
+}
+
+/* Titre h3 */
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: normal;
+  color: #2D3436;
+  padding-top: 50px; 
+  margin-top: -50px;
+  margin: 15px;
+  color: #17CBCB;
+}
+
+/* Photo */
+
+.photo{
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  margin: 40px 40px 0px 40px;
+  box-shadow: 0px 0px 20px rgb(199, 199, 199) ;
+}
+
+#photo1, #photo4{
+  margin-left: 205px;
+}
+
+/* Recommandation */
 
 
 
-/* Portfolio hover */
+/* Skills */
+
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  font-size: 20px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.skills_html {width: 30%; background-color: #17CBCB;}
+.skills_js {width: 1%; background-color: #17CBCB;}
+.skills_css {width: 30%; background-color: #17CBCB;}
+.skills_php {width: 1%; background-color: #17CBCB;}
+.skills_python {width: 40%; background-color: #17CBCB;}
+.skills_C {width: 1%; background-color: #17CBCB;}
+.skills_MySql {width: 30%; background-color: #17CBCB;}
