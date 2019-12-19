@@ -62,7 +62,7 @@ footer p{
 
 footer li {
   padding-top: 5px;
-  margin-left: -10px;
+  margin-left: 20px;
 }
 
 .niv1{
@@ -154,4 +154,46 @@ ul li a:hover {
 .navbar li:hover{
   color: #00B894;
 }
+
+/* body */
+
+h3{
+ font-size: 40px;
+ margin: 15px;
+ text-align: center;
+ font-weight:normal;
+ color: #2D3436;
+}
+
+
+.photo{
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  margin: 40px 40px 0px 40px;
+}
+
+#photo1, #photo4{
+  margin-left: 205px;
+}
+
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.skills_html {width: 20%; background-color: #00B894;}
+.skills_js {width: 20%; background-color: #00B894;}
+.skills_css {width: 20%; background-color: #00B894;}
+.skills_php {width: 0%; background-color: #00B894;}
+.skills_python {width: 40%; background-color: #00B894;}
+.skills_C {width: 40%; background-color: #00B894;}
+.skills_MySql {width: 10%; background-color: #00B894;}
 
