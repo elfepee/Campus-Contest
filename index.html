@@ -1,145 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio MEILLAT Tristan</title>
+  <title>Meillat Tristan</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/836a2159df.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0c119aa5eb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</link>
 </head>
 <body>
   <header>
-    <a href="index.html">
-      <img src="assets/image/MEILLAT T..png" alt="Logo" width="200" height="200"/>
-    </a>
-    <h1> MEILLAT Tristan</h1>
-    <h2> Développeur</h2>
-    <!-- menu -->
-    <nav>
+    <div class="niv1">
+      <a class="logo" href="index.html">
+        <img src="assets/image/MEILLAT T..png" alt="logo" width="200"   height="200" />
+      </a>
+      <div class="titre">
+        <h1>MEILLAT Tristan</h1>
+        <h2>développeur</h2>
+      </div>
+
+      <!-- Réseaux socio -->
+      <ul class="reseaux">
+        <li>
+          <a id=github target="_blank" href="https://github.com/MeillatTristan" title="Github">
+            <i class="fab fa-github" style="font-size: 40px;" ></i>
+          </a>
+        </li>
+        <li>
+          <a id=in target="_blank" href="https://www.linkedin.com/in/tristan-meillat-3b6845194/" title="LinkediSn">
+            <i class="fab fa-linkedin-in" style="font-size: 40px;"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+    <!-- Menu -->
+      <ul class="navbar">
+        <li>
+          <a id=pf href="#Portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#Compétences">Compétences</a>
+        </li>
+        <li>
+          <a href="#Recommandation">Recommandation</a>
+        </li>
+        <li>
+          <a href="#CV">CV</a>
+        </li>
+      </ul>
+
+
+  <!-- Bloc Principale -->
+  <div class="principal">
+  <!-- Sliders -->
+<!-- Sliders Fin -->
+  <div class="Portfolio">
+    <h3 id=Portfolio>Portfolio</h3>
+  </div>
+  <div>
+    <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" height="400", width="400">
+    <span class="decription">lorem</span>
+  </div>
+  <div>
+    <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" height="400", width="400">
+    <span class="decription">lorem</span>
+  </div>
+  <div>
+    <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" height="400", width="400">
+    <span class="decription">lorem</span>
+  </div>
+  <div>
+    <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" height="400", width="400">
+    <span class="decription">lorem</span>
+  </div>
+  <div>
+    <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" height="400", width="400">
+    <span class="decription">lorem</span>
+  </div>
+  <div>
+    <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" height="400", width="400">
+    <span class="decription">lorem</span>
+  </div>
+  <!-- Partie Recommandation -->
+  <h3 id=Recommandation> Recommandation</h3>
+  <div class="recommandation">
+    <img src="lampe.jpg" alt="image_recommandation">
+    <div>
+      <h4>KYKY_Tv</h4>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <img src="lampe.jpg" alt="image_recommandation">
+    <div>
+      <h4>ZOZO_Tv</h4>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <img src="lampe.jpg" alt="image_recommandation">
+    <div>
+      <h4>COCO_Tv</h4>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+<!-- Compétences -->
+  <p>HTML</p>
+  <h3 id=Compétences> Skills</h3>
+  <div class="container">
+    <div class="skills_html">20%</div>
+  </div>
+
+  <p>CSS</p>
+  <div class="container">
+    <div class="skills_css">20%</div>
+  </div>
+
+  <p>Python</p>
+  <div class="container">
+    <div class="skills_python">45%</div>
+  </div>
+
+  <p>Java Script</p>
+  <div class="container">
+    <div class="skills_js">45%</div>
+  </div>
+
+  <p>C</p>
+  <div class="container">
+    <div class="skills_C">1%</div>
+  </div>
+
+  <p>MySql</p>
+  <div class="container">
+    <div class="skills_MySql">30%</div>
+  </div>
+
+  <!-- Partie CV -->
+  <h3 id=CV>CV</h3>
+  <p>Pour télécharger mon CV cliquez sur le bouton suivant: </p>
+  <a target="blank" href="assets/documents/C.V. MEILLAT Tristan.docx"> cliquez ici</a>
+  </div>
+
+  <!-- Pied de page -->
+  <footer>
     <ul>
       <li>
-        <a href="#Accueil"> Accueil</a>
+        Contact
       </li>
       <li>
-        <a href="#Compétences"> Compétences</a>
-      </li>
-      <li>
-        <a href="#Recommandation"> Recommandation</a>
-      </li>
-      <li>
-        <a href="#CV"> CV</a>
+        Mention légales
       </li>
     </ul>
-  </nav>
-
-  <!-- réseaux sociaux -->
-  <ul>
-    <li>
-      <a target="_blank" href="https://github.com/MeillatTristan" title="Github">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://www.linkedin.com/in/tristan-meillat-3b6845194/" title="linkedin">
-        <i class="fab fa-linkedin"></i>
-        </a>
-    </li>
-  </ul>
-  </header>
-
-  <!-- Bloc principale -->
-    <!-- SLIDERS -->
-
-    <!-- SLIDERS_FIN -->
-
-    <!-- Bloc projets -->
-    <h3>Portfolio</h3>
-    <div class="portfolio">
-      <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" width="300" height="300">
-      <span class="descri">lorem</span>
-    </div>
-    <div>
-      <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" width="300" height="300">
-      <span class="descri">lorem</span>
-    </div>
-    <div>
-      <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" width="300" height="300">
-      <span class="descri">lorem</span>
-    </div>
-    <div>
-      <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" width="300" height="300">
-      <span class="descri">lorem</span>
-    </div>
-    <div>
-      <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" width="300" height="300">
-      <span class="descri">lorem</span>
-    </div>
-    <div>
-      <img src="assets/image/regarder-icone-texte-venir-bientot_1017-5059.jpg" alt="image_portfolio" width="300" height="300">
-      <span class="descri">lorem</span>
-    </div>
-
-    <!-- Partie Recommandation -->
-    <h3>Recommandation</h3>
-
-    <div class="recommandation">
-      <img src="assets/image/1060-536x354-blur_2.jpg" alt="image fond Recommandation">
-      <div class="txt_reco">
-        <h4>EnzoTV</h4>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <img src="assets/image/1060-536x354-blur_2.jpg" alt="image fond Recommandation">
-      <div class="txt_reco">
-        <h4>LoremTV</h4>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <img src="assets/image/1060-536x354-blur_2.jpg" alt="image fond Recommandation">
-      <div class="txt_reco">
-        <h4>KylianTV</h4>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-
-  <!-- Compétences -->
-  <p>HTML</p>
-<div class="container">
-  <div class="skills_html">20%</div>
-</div>
-
-<p>CSS</p>
-<div class="container">
-  <div class="skills_css">20%</div>
-</div>
-
-<p>Python</p>
-<div class="container">
-  <div class="skills_python">40%</div>
-</div>
-
-<p>C</p>
-<div class="container">
-  <div class="skills_C">50%</div>
-</div>
-
-<p>MySql</p>
-<div class="container">
-  <div class="skills_Mysql">20%</div>
-</div>
-
-<!-- Partie CV -->
-<h3>CV</h3>
-<p>Pour télécharger mon CV cliquez sur le bouton suivant: </p>
-<a href="assets/documents/C.V. MEILLAT Tristan.docx"> cliquez ici</a>
-
-<footer>
-  <ul>
-    <li>
-      Contact
-    </li>
-    <li>
-      Mentions légales
-    </li>
-  </ul>
-  <p>© 2019 - MEILLAT Tristan</p>
-</footer>
+    <p>© 2019-2020 - MEILLAT Tristan</p>
+  </footer>
 </body>
 </html>
