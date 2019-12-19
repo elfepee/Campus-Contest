@@ -10,6 +10,12 @@ a, a:visited {
 	transition: all 0.4s ease;
 }
 
+/* Couleur au passage de la souris */
+
+a:hover {
+  color: #17CBCB;
+}
+
 /* Rectangle principal */
 
 .principal{
@@ -58,7 +64,7 @@ footer li {
 h1{
   position: absolute;
   top: 40px;
-  right: 505px;
+  right: 480px;
   font-size: 50px;
   line-height: 80px;
   text-align: center;
@@ -70,15 +76,15 @@ h1{
   text-decoration: underline #17CBCB ;
   color: #2D3436;
   padding-bottom: 50px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Titre "developpeur" */
 
 h2 {
   position: absolute;
-  right: 600px;
+  right: 575px;
   top: 100px;
   font-size: 45px;
   line-height: 57px;
@@ -112,6 +118,6 @@ ul li a:hover {
 
 /* Portfolio */
 
-header ul li a#pf {
-  text-decoration: none;
-}
+
+
+/* Portfolio hover */
