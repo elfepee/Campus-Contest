@@ -196,9 +196,9 @@ div#photos div {
 
 div#photos div span {
   display: inline-block;
-  margin-top: 75%;
+  margin-top: 79.6%;
   transition: all 0.5s ease;
-  color:#17CBCB;
+  color:white;
   font-weight: bold;
 }
 div#photos div:hover span,
@@ -212,13 +212,16 @@ div#photos div span.title {
   width: 100%;
   text-align: center;
   font-size: 30px;
-  color: #17CBCB;
+  color: white;
   font-weight: bold;
-  margin-bottom: 20px;
+  background-color: black;
+  opacity: 0.6;
 }
 
 div#photos div span.texte {
   padding: 2% 5% 5% 5%;
+  background-color: black;
+  opacity: 0.6;
 }
 
 /* Recommandation */
@@ -304,3 +307,8 @@ h6 {
 .skills_python {width: 40%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
 .skills_C {width: 1%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
 .skills_MySql {width: 30%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+
+.Cv {
+  display: inline-block;
+  width: 100%;
+}
