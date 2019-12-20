@@ -13,8 +13,8 @@
 <body>
   <header>
     <div class="niv1">
-      <a class="logo" href="index.html">
-        <img src="assets/image/MEILLAT T..png" alt="logo" width="200"   height="200" />
+      <a id="logo" href="index.html">
+        <img src="assets/image/MEILLAT T..png" alt="logo"/>
       </a>
       <div class="titre">
         <h1>MEILLAT Tristan</h1>
@@ -25,12 +25,12 @@
       <ul class="reseaux">
         <li>
           <a id=github target="_blank" href="https://github.com/MeillatTristan" title="Github">
-            <i class="fab fa-github" style="font-size: 40px;" ></i>
+            <i class="fab fa-github"></i>
           </a>
         </li>
         <li>
           <a id=in target="_blank" href="https://www.linkedin.com/in/tristan-meillat-3b6845194/" title="LinkediSn">
-            <i class="fab fa-linkedin-in" style="font-size: 40px;"></i>
+            <i class="fab fa-linkedin-in"></i>
           </a>
         </li>
       </ul>
@@ -42,13 +42,13 @@
           <a id=pf href="#Portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="#Compétences">Compétences</a>
-        </li>
-        <li>
           <a href="#Recommandation">Recommandation</a>
         </li>
         <li>
-          <a href="#CV">CV</a>
+          <a href="#Compétences">Compétences</a>
+        </li>
+        <li>
+          <a href="#CV_title">CV</a>
         </li>
       </ul>
 
@@ -56,75 +56,89 @@
   <!-- Bloc Principale -->
   <div class="principal">
   <!-- Sliders -->
-<!-- Sliders Fin -->
-  <div class="Portfolio">
+  <!-- Sliders Fin -->
     <h3 id=Portfolio>Portfolio</h3>
-  </div>
-  <div>
-    <img class="photo" id="photo1" src="assets/image/coming.jpg" alt="image_portfolio">
-    <img class="photo" src="assets/image/coming.jpg" alt="image_portfolio">
-    <img class="photo" src="assets/image/coming.jpg" alt="image_portfolio">
-    <img class="photo" id="photo4" src="assets/image/coming.jpg" alt="image_portfolio">
-    <img class="photo" src="assets/image/coming.jpg" alt="image_portfolio">
-    <img class="photo" src="assets/image/coming.jpg" alt="image_portfolio">
-  </div>
-  <!-- Partie Recommandation -->
-  <h3 id=Recommandation> Recommandation</h3>
-  <div class="recommandation">
-    <img src="assets/image/1060-536x354-blur_2.jpg" alt="image_recommandation">
-    <div>
-      <h4>KYKY_Tv</h4>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div id="photos" >
+      <a href="#">
+        <div class="photo" style="background-image: url('https://cdn.discordapp.com/attachments/633600451769794570/657274087210745856/Site.png');">
+          <span class="title">Projet Classe</span>
+          <span class="texte">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus possimus nemo nihil enim quos adipisci. Laudantium consequuntur fugit vitae debitis perspiciatis veniam nostrum mollitia dignissimos, voluptates tempora quidem ratione!<br />
+            Lire la suite ...
+          </span>
+        </div>
+      </a>
+      <img class="photo" id="photo1" src="assets/image/coming.jpg">
+      <img class="photo" id="photo4" src="assets/image/coming.jpg" >
+      <!-- <img class="photo" src="https://cdn.discordapp.com/attachments/633600451769794570/657241902407614484/coming.jpg%22%3E">
+      <img class="photo" src="https://cdn.discordapp.com/attachments/633600451769794570/657241902407614484/coming.jpg%22%3E"> -->
     </div>
-    <img src="assets/image/1060-536x354-blur_2.jpg" alt="image_recommandation">
-    <div>
-      <h4>ZOZO_Tv</h4>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- Partie Recommandation -->
+    <h3 id=Recommandation> Recommandation</h3>
+    <div class="recommandation">
+      <!-- Superposition simple -->
+          <div id="overlay1">
+            <div class="overlay-image">
+              <img class="image" src="assets/image/computer-2048166_640.jpg" />
+              <div class="text">Recommandation : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure illum reiciendis sint nostrum. Fuga inventore vitae sequi quasi. Nesciunt id ut perspiciatis ex in deleniti maxime tempora laudantium a rerum.</div>
+            </div>
+          </div>
+        <h4>Nom Entreprise :</h4>
+          <div class="overlay-image">
+            <img class="image" src="assets/image/computer-2048166_640.jpg" />
+            <div class="text">Recommandation : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure illum reiciendis sint nostrum. Fuga inventore vitae sequi quasi. Nesciunt id ut perspiciatis ex in deleniti maxime tempora laudantium a rerum.</div>
+          </div>
+        <h5>Nom Entreprise :</h5>
+          <div class="overlay-image">
+            <img class="image" src="assets/image/computer-2048166_640.jpg" />
+            <div class="text">Recommandation : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure illum reiciendis sint nostrum. Fuga inventore vitae sequi quasi. Nesciunt id ut perspiciatis ex in deleniti maxime tempora laudantium a rerum.</div>
+          </div>
+        <h6>Nom Entreprise :</h6>
+      </div>
+  <!-- Compétences -->
+    <h3 id="Compétences"> Skills </h3>
+    <div class="compétences">
+        <p>HTML</p>
+      <div class="container">
+        <div class="skills_html">20%</div>
+      </div>
+
+      <p>CSS</p>
+      <div class="container">
+        <div class="skills_css">20%</div>
+      </div>
+
+      <p>Python</p>
+      <div class="container">
+        <div class="skills_python">40%</div>
+      </div>
+
+      <p>Java Script</p>
+      <div class="container">
+        <div class="skills_js">10%</div>
+      </div>
+
+      <p>C</p>
+      <div class="container">
+        <div class="skills_C">40%</div>
+      </div>
+
+
+      <p>MySql</p>
+      <div class="container">
+        <div class="skills_MySql">10%</div>
+      </div>
     </div>
-    <img src="assets/image/1060-536x354-blur_2.jpg" alt="image_recommandation">
-    <div>
-      <h4>COCO_Tv</h4>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <!-- Partie CV -->
+    <h3 id=CV_title>CV</h3>
+    <div class="cv">
+      <p>Pour télécharger mon CV cliquez sur le bouton suivant: </p>
+      <a id="dl_cv" target="blank" href="assets/documents/C.V. MEILLAT Tristan.docx"> cliquez ici</a>
     </div>
-  </div>
-<!-- Compétences -->
-  <p>HTML</p>
-  <h3 id=Compétences> Skills</h3>
-  <div class="container">
-    <div class="skills_html">20%</div>
-  </div>
 
-  <p>CSS</p>
-  <div class="container">
-    <div class="skills_css">20%</div>
   </div>
-
-  <p>Python</p>
-  <div class="container">
-    <div class="skills_python">40%</div>
-  </div>
-
-  <p>Java Script</p>
-  <div class="container">
-    <div class="skills_js">10%</div>
-  </div>
-
-  <p>C</p>
-  <div class="container">
-    <div class="skills_C">40%</div>
-  </div>
-
-  <p>MySql</p>
-  <div class="container">
-    <div class="skills_MySql">10%</div>
-  </div>
-
-  <!-- Partie CV -->
-  <h3 id=CV>CV</h3>
-  <p>Pour télécharger mon CV cliquez sur le bouton suivant: </p>
-  <a target="blank" href="assets/documents/C.V. MEILLAT Tristan.docx"> cliquez ici</a>
-  </div>
-
   <!-- Pied de page -->
   <footer>
     <ul>
