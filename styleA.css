@@ -1,3 +1,7 @@
+*{
+  margin:0;
+  padding:0;
+}
 body {
   font-family: 'Dosis', sans-serif;
 }
@@ -10,15 +14,28 @@ a, a:visited {
 	transition: all 0.4s ease;
 }
 
-/* Couleur au passage de la souris */
-
-a:hover {
+ul li a:hover {
   color: #17CBCB;
 }
 
+.niv_1 {
+  display: flex;
+}
+
+.titre {
+  box-shadow: 0px 0px 20px #17CBCB;
+  margin-top: 35px;
+  margin-left: 415px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 125px;
+  margin-bottom: 40px;
+}
+
+
 /* Rectangle principal */
 
-.principal{
+.principal {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   margin: 20px 20px 0px 20px;
   padding: 20px;
@@ -32,8 +49,8 @@ header {
 /* Placement logo */
 
 header a img {
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 /* Contact/Mention légal */
@@ -46,7 +63,7 @@ footer ul {
 /* © 2019-2020 - BEURTHE Alex */
 
 footer p{
-  padding-top: 18px;
+  padding: 50px;
   position: absolute;
   display:  inline-block;
   right: 40px;
@@ -55,69 +72,260 @@ footer p{
 /* Placement Contact/Mention légal */
 
 footer li {
-  padding-top: 5px;
-  margin-left: -10px;
+  padding-top: 25px;
+  margin-left: 30px;
 }
 
 /* Titre "BEURTHE Alex" */
 
 h1{
-  position: absolute;
-  top: 40px;
-  right: 480px;
+  margin: 0px;
   font-size: 50px;
   line-height: 80px;
   text-align: center;
-  vertical-align: top;
-  margin-bottom: 120px;
-  margin-left: 50px;
-  margin-right: 50px;
-  box-shadow: 0px 0px 20px #17CBCB;
-  text-decoration: underline #17CBCB ;
   color: #2D3436;
-  padding-bottom: 50px;
-  padding-right: 15px;
-  padding-left: 15px;
+  height: 65px;
+  position: relative;
+}
+
+h1:after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  background-color: #17CBCB;
+  width: 140px;
+  height: 2px;
+
 }
 
 /* Titre "developpeur" */
 
 h2 {
-  position: absolute;
-  right: 575px;
-  top: 100px;
+  margin: 0px;
   font-size: 45px;
   line-height: 57px;
   text-align: center;
   color: #17CBCB;
 }
 
-/* Logo github */
+/* Logo */
 
-header ul li a#github, a:hover {
+.réseaux {
   list-style-type: none;
-	position: absolute;
-	top: 70px;
-  right: 100px;
+  display: flex;
+  margin-left: 20%;
+  margin-top: 4.5%;
 }
 
-/* Logo LikeIn */
-
-header ul li a#in {
-  list-style-type: none;
-	position: absolute;
-	top: 70px;
-	right: 175px;
+.réseaux li {
+  padding: 20px;
 }
 
 /* Couleur au survole des réseaux */
 
-ul li a:hover {
+.réseaux li a:hover {
   color: #0077B4;
 }
 
-/* Portfolio */
+/* Navbar */
+
+.navbar{
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: -2px;
+  background-color: #2D3436;
+}
+
+.navbar li{
+  margin: auto;
+  list-style-type: none;
+  font-size: 25px;
+}
+
+.navbar li a{
+  color: #fffffffb;
+}
+
+/* Titre h3 */
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 50px; 
+  margin-top: -50px;
+  margin: 15px;
+  color: #17CBCB;
+}
+
+/* Photo */
+
+.photo{
+  display: inline-block;
+  width: 17%;
+  height: 17%;
+  margin: 20px;
+  box-shadow: 0px 0px 20px rgb(199, 199, 199) ;
+}
+
+#photo1, #photo4{
+  margin-left: 300px;
+}
+
+#photos {
+  display: inline-block
+}
+
+/* Photo div */
+div#photos div {
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+div#photos div span {
+  display: inline-block;
+  margin-top: 79.6%;
+  transition: all 0.5s ease;
+  color:white;
+  font-weight: bold;
+}
+div#photos div:hover span,
+div#photos div:focus span {
+  margin-top: 0;
+  transition: all 0.5s ease;
+}
+
+div#photos div span.title {
+  padding: 5% 5% 0 0;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  opacity: 0.6;
+}
+
+div#photos div span.texte {
+  padding: 2% 5% 5% 5%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+/* Recommandation */
+
+
+/* Conteneur principal */
+.overlay-image {
+  position: relative;
+  width: 66.65%;
+}
+/* Image originale */
+.overlay-image .image {
+  display: block;
+  width: 66.65%;
+  height: auto;
+  margin-bottom: 45px;
+}
+/* Texte original */
+.overlay-image .text {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  font-size: 20px;
+  margin-right: 325px;
+}
+  
+h4 {
+  position: absolute;
+  text-align: left;
+  top: 115% ;
+  margin-left: 20px;
+  font-size: 23px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h5 {
+  position: absolute;
+  text-align: left;
+  top: 180% ;
+  margin-left: 20px;
+  font-size: 23px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h6 {
+  position: absolute;
+  text-align: left;
+  top: 245% ;
+  margin-left: 20px;
+  font-size: 23px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+/* Skills */
+
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.compétence {
+  margin-left: 20%;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.skills_html {width: 30%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_js {width: 1%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_css {width: 30%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_php {width: 1%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_python {width: 40%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_C {width: 1%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_MySql {width: 30%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+
+.Cv {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.Cv a {
+  background-color: lightgray;
+  font-weight:  bold;
+  border-radius: 4px;
+  padding: 0px 4px 2px 4px;
+}
+
+.Cv a:hover,
+.Cv a:focus {
+  border: 1px solid #17CBCB;
+  transition: all 0.4s ease;
+}
 
 
 
-/* Portfolio hover */
