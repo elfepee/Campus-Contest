@@ -14,6 +14,10 @@ a, a:visited {
 	transition: all 0.4s ease;
 }
 
+ul li a:hover {
+  color: #17CBCB;
+}
+
 .niv_1 {
   display: flex;
 }
@@ -28,15 +32,10 @@ a, a:visited {
   margin-bottom: 40px;
 }
 
-/* Couleur au passage de la souris */
-
-a:hover {
-  color: #17CBCB;
-}
 
 /* Rectangle principal */
 
-.principal{
+.principal {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   margin: 20px 20px 0px 20px;
   padding: 20px;
@@ -133,26 +132,22 @@ h2 {
 /* Navbar */
 
 .navbar{
+  z-index: 1000;
   display: flex;
+  flex-wrap: wrap;
   position: sticky;
   top: -2px;
-  background-color: #ffffff; 
+  background-color: #2D3436;
 }
 
 .navbar li{
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: auto;
   list-style-type: none;
   font-size: 25px;
-  color: #2D3436;
-  border-width:2px 1px 2px 1px;
-  border-style:solid;
-  border-color: #95a5a6;
-  padding: 0px 138.5px 0px 138.6px;
 }
 
-.navbar li:hover{
-  color: #17CBCB;
+.navbar li a{
+  color: #fffffffb;
 }
 
 /* Titre h3 */
@@ -161,7 +156,6 @@ h3 {
   font-size: 40px;
   text-align: center;
   font-weight: normal;
-  color: #2D3436;
   padding-top: 50px; 
   margin-top: -50px;
   margin: 15px;
@@ -172,19 +166,115 @@ h3 {
 
 .photo{
   display: inline-block;
-  width: 20%;
-  height: 20%;
-  margin: 40px 40px 0px 40px;
+  width: 17%;
+  height: 17%;
+  margin: 20px;
   box-shadow: 0px 0px 20px rgb(199, 199, 199) ;
 }
 
 #photo1, #photo4{
-  margin-left: 205px;
+  margin-left: 300px;
+}
+
+#photos {
+  display: inline-block
+}
+
+/* Photo div */
+div#photos div {
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+div#photos div span {
+  display: inline-block;
+  margin-top: 75%;
+  transition: all 0.5s ease;
+  color:#17CBCB;
+  font-weight: bold;
+}
+div#photos div:hover span,
+div#photos div:focus span {
+  margin-top: 0;
+  transition: all 0.5s ease;
+}
+
+div#photos div span.title {
+  padding: 5% 5% 0 0;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #17CBCB;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+div#photos div span.texte {
+  padding: 2% 5% 5% 5%;
 }
 
 /* Recommandation */
 
 
+/* Conteneur principal */
+.overlay-image {
+  position: relative;
+  width: 66.65%;
+}
+/* Image originale */
+.overlay-image .image {
+  display: block;
+  width: 66.65%;
+  height: auto;
+  margin-bottom: 45px;
+}
+/* Texte original */
+.overlay-image .text {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  font-size: 20px;
+  margin-right: 325px;
+}
+  
+h4 {
+  position: absolute;
+  text-align: left;
+  top: 115% ;
+  margin-left: 20px;
+  font-size: 23px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h5 {
+  position: absolute;
+  text-align: left;
+  top: 180% ;
+  margin-left: 20px;
+  font-size: 23px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h6 {
+  position: absolute;
+  text-align: left;
+  top: 245% ;
+  margin-left: 20px;
+  font-size: 23px;
+  text-shadow: 2px 2px 2px #000;
+}
 
 /* Skills */
 
@@ -192,6 +282,12 @@ h3 {
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
   font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.compétence {
+  margin-left: 20%;
 }
 
 .skills {
@@ -201,10 +297,10 @@ h3 {
   color: white; /* White text color */
 }
 
-.skills_html {width: 30%; background-color: #17CBCB;}
-.skills_js {width: 1%; background-color: #17CBCB;}
-.skills_css {width: 30%; background-color: #17CBCB;}
-.skills_php {width: 1%; background-color: #17CBCB;}
-.skills_python {width: 40%; background-color: #17CBCB;}
-.skills_C {width: 1%; background-color: #17CBCB;}
-.skills_MySql {width: 30%; background-color: #17CBCB;}
+.skills_html {width: 30%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_js {width: 1%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_css {width: 30%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_php {width: 1%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_python {width: 40%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_C {width: 1%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
+.skills_MySql {width: 30%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
