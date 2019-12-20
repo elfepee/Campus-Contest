@@ -309,6 +309,23 @@ h6 {
 .skills_MySql {width: 30%; background-color: #17CBCB; border-radius: 10px; text-align: center;}
 
 .Cv {
-  display: inline-block;
+  display: flex;
   width: 100%;
+  justify-content: space-around;
 }
+
+.Cv a {
+  background-color: lightgray;
+  font-weight:  bold;
+  border-radius: 4px;
+  padding: 0px 4px 2px 4px;
+}
+
+.Cv a:hover,
+.Cv a:focus {
+  border: 1px solid #17CBCB;
+  transition: all 0.4s ease;
+}
+
+
+
